@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Курси валют</title>
+</head>
+<body>
+    <h1>Пошук курсу валют</h1>
+
+    <label for="code">Код валюти:</label>
+    <input id="code" value="USD" maxlength="3">
+    <button id="searchButton">Знайти курс</button>
+    <p id="rateResult"></p>
+
+    <h2>Конвертація</h2>
+
+    <label for="amount">Сума:</label>
+    <input id="amount" type="number" min="0" step="any" value="100">
+
+    <label for="from">З валюти:</label>
+    <select id="from">
+        <option>UAH</option>
+        <option>USD</option>
+        <option>EUR</option>
+        <option>PLN</option>
+    </select>
+
+    <label for="to">У валюту:</label>
+    <select id="to">
+        <option>USD</option>
+        <option>UAH</option>
+        <option>EUR</option>
+        <option>PLN</option>
+    </select>
+
+    <button id="convertButton">Конвертувати</button>
+    <p id="conversionResult"></p>
+
+    <script src="app.js"></script>
+</body>
+</html>
